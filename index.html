@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/addons/p5.sound.min.js"></script>
+    <script src="sketch.js"></script>
+    <style>
+      body {
+        background-color: rgb(0, 122, 16);
+      }
+      .main {
+        display: flex;
+        margin-bottom: 1rem;
+      }
+      .btns {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #title {
+        display: inline-block;
+        margin-left: 0.5rem;
+        color: #fff;
+        text-align: center;
+        width: 100%;
+        font-size: 3rem;
+      }
+      #buttons {
+        text-align: center;
+        color: #fff;
+      }
+      #canvas_container {
+        width: 1000px;
+      }
+      .button {
+        display: inline-block;
+        width: 100px;
+        height: 50px;
+        background-color: rgb(175, 79, 0);
+        color: #fff;
+        padding: 0.4rem 1.3rem;
+        font-size: 1rem;
+        text-align: center;
+        border: none;
+        cursor: pointer;
+        margin-right: 0.5rem;
+      }
+      .instructions {
+        color: #fff;
+        text-align: left;
+        inline-size: 350px;
+        overflow-wrap: normal;
+      }
+      .side-bar {
+        margin-left: 2rem;
+      }
+      .description {
+        color: #fff;
+        text-align: justify;
+        inline-size: 90%;
+        overflow-wrap: normal;
+      }
+      #key {
+          margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="title"> ALIEN SUNFOWER SURVIVAL </h1>
+    <div class="main">
+
+      <div id="canvas_container" style="width:1000px; height: 500px;"></div>
+      <div class="side-bar">
+
+        <div id="s-container1" style="width:0px; height: 10px;">
+        </div>
+        <h2 id="buttons">BUTTONS</h2>
+        <div class="btns">
+          <button class="button" onclick="startGame();">START</button>
+                              <!-- onclick="startGame();" -->
+          <button class="button" onclick="pauseGame();">PAUSE</button>
+        </div>
+        <div class="instructions">
+          <div id="key">
+            <h2>KEY (press these keys on your keyboard):</h2>
+            <p>1: equip Sunflower</p>
+            <p>2: equip Watering Can</p>
+            <p>W: jump</p>
+            <p>A: move left</p>
+            <p>D: move right</p>
+            <p>S: move down from platform, or while equipping the watering can in your inventory, you can plant sunflower seeds into the ground 
+                (you have to wait a whole second for it to finally plant!)
+            </p>
+            <p>P: shoot sunflower while equipping sunflower in inventory</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="description">
+      <h2>Description:</h2>
+      <p>
+        You are a cute green alien who landed onto a sunflower field in planet Earth with your private U.F.O. that you 'burrowed' from a friend. 
+        While you were examining the humonguous flowers (little did you know you were just super short), you found a small watering can that fit your hand. 
+        You learned botany through a book you were reading on your way here so you start planting seeds and growing sunflowers when all of a sudden a hungry 
+        hoard of bat enemies storm your way! To protect yourself you pick up the sunflowers you were growing and throw them their way with full force, and to 
+        your surprise, it works. The bats become satisfied with the sunflower you give them and disappear from your sight. Now the only way to survive the
+        bat attack is for you to satsify the bats with your homemade sunflowers. Keep growing, harvesting, and throwing sunflowers until you meet your ultimate demise... 
+        of being tickled by bats (NO ONE DIES). 
+      </p>
+      <p>Credits:</p>
+      <p>All asset credits goes to <a href="https://www.kenney.nl/assets">Kenny</a> including sprites and audio.</p>
+      <p>The background is from <a href="https://www.shutterstock.com/image-vector/farm-game-background-2d-application-vector-401097337">Shutterstock</a>.</p>
+    </div>
+  </body>
+</html>
